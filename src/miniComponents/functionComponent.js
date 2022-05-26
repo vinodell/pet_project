@@ -13,7 +13,7 @@ const Counter = () => {
     setValue(value - 1)
   }
   const res = () => {
-    setValue(value * 0)
+    setValue(0)
   }
   return (
     <div>

@@ -1,16 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Counter from './mini_components/functional'
-import HelloComp from './mini_components/react_component';
-
-const name = 'Vinodel'
+import Counter from './miniComponents/functionComponent'
+import HelloComp from './miniComponents/reactComponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div>this is React.component</div>
-        <HelloComp name={name} />
+        <HelloComp name={"Vinodel"} />
         <Counter />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
