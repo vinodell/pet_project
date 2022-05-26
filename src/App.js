@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div id="magic">This is createElement</div>
         <div>this is React.component</div>
-        <HelloComp name={"Vinodel"} />
+        <HelloComp name={"Vinodel"} master={"Dmitry White"}/>
         <Counter />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
