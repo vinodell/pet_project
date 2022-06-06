@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from './miniComponents/functionComponent'
+import HelloComp from './miniComponents/reactComponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div id="magic">This is createElement</div>
+        <div>this is React.component</div>
+        <HelloComp name={"Vinodel"} master={"Dmitry White"}/>
+        <Counter />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
