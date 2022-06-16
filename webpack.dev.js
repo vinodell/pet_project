@@ -4,7 +4,7 @@ const { resolve } = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
 
-const { PORT, SOCKETS_IO_STATUS } = process.env;
+const { PORT } = process.env;
 
 const config = {
   mode: "development",
@@ -14,7 +14,6 @@ const config = {
   devServer: {
     hot: true,
     open: true,
-    // server: 'https',
     contentBase: resolve(__dirname, "dist"),
     port: 8081, // client port
     host: "localhost",
@@ -25,12 +24,7 @@ const config = {
       },
     },
     historyApiFallback: true,
-    proxy: {
-      context: ["/api", "/ws"],
-      target: `http://localhost:${PORT || 8080}`, // server port
-      ws: SOCKETS_IO_STATUS,
-    },
-  },
+  }
 };
 
 module.exports = merge(common, config);
