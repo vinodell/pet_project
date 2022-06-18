@@ -26,12 +26,10 @@
   },
   "scripts": {
     "dev": "yarn run watch:client & yarn run watch:server",
-    "watch:server": "nodemon start.js",
-    "watch:client": "webpack serve ./webpack.config.js",
+    "watch:server": "nodemon start",
+    "watch:client": "webpack ./webpack.config.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -76,7 +74,6 @@
     "postcss-preset-env": "^7.4.3",
     "prettier": "^2.6.2",
     "sass-loader": "^12.6.0",
-    "style-loader": "2.0.0",
-    "tailwindcss": "^3.0.24"
+    "style-loader": "2.0.0"
   }
 }

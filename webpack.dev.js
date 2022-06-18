@@ -4,8 +4,6 @@ const { resolve } = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
 
-const { PORT } = process.env;
-
 const config = {
   mode: "development",
   optimization: {
